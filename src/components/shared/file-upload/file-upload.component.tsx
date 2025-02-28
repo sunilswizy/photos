@@ -44,9 +44,9 @@ const FileUpload: React.FC<IFileUploadProps> = ({ onFileChange }) => {
 
   return (
     <div
-      className={`relative h-30 w-50 border-2 border-dashed ${
+      className={`relative h-full w-full border-2 border-dashed ${
         isDragging ? 'border-blue-700 bg-blue-100' : 'border-blue-500'
-      } cursor-pointer border-blue-500 sm:h-50 sm:w-95 lg:h-70 lg:w-120`}
+      } cursor-pointer border-blue-500`}
       onDragEnter={handleDragEnter}
       onDragOver={handleDragOver}
       onDragLeave={handleDragLeave}
