@@ -65,22 +65,22 @@ const FileUpload: React.FC<IFileUploadProps> = ({ onFileChange }) => {
         <div className="align-center relative flex justify-center">
           <img
             src="https://cdn-icons-png.flaticon.com/512/8377/8377243.png"
-            className={`z-10 h-15 w-15 transition-transform duration-300 ease-in-out ${isDragging ? '-translate-y-3' : ''}`}
+            className={`z-10 h-8 w-8 transition-transform duration-300 ease-in-out ${isDragging ? '-translate-y-3' : ''} sm:h-10 sm:w-10 lg:h-15 lg:w-15`}
             alt="image"
           />
           <img
             src="https://cdn-icons-png.flaticon.com/512/8377/8377243.png"
-            className={`absolute top-0 bottom-0 z-5 h-15 w-15 scale-90 grayscale filter transition-transform duration-300 ease-in-out ${isDragging ? '-translate-y-2 translate-x-10 rotate-45' : ''}`}
+            className={`absolute top-0 bottom-0 z-5 h-8 w-8 scale-90 grayscale filter transition-transform duration-300 ease-in-out ${isDragging ? '-translate-y-2 translate-x-10 rotate-45' : ''} sm:h-10 sm:w-10 lg:h-15 lg:w-15`}
             alt="image"
           />
           <img
             src="https://cdn-icons-png.flaticon.com/512/8377/8377243.png"
-            className={`absolute top-0 bottom-0 z-5 h-15 w-15 scale-90 grayscale filter transition-transform duration-300 ease-in-out ${isDragging ? '-translate-x-10 -translate-y-2 -rotate-45' : ''}`}
+            className={`absolute top-0 bottom-0 z-5 h-8 w-8 scale-90 grayscale filter transition-transform duration-300 ease-in-out ${isDragging ? '-translate-x-10 -translate-y-2 -rotate-45' : ''} sm:h-10 sm:w-10 lg:h-15 lg:w-15`}
             alt="image"
           />
         </div>
-        <p className="text-center text-sm font-semibold text-gray-500">Drop your images here or browse</p>
-        <p className="text-center text-xs font-semibold text-gray-300">supports JPG, PNG and JPEG</p>
+        <p className="text-center text-sm font-semibold text-gray-500 lg:text-base">Drop your images here or browse</p>
+        <p className="text-center text-xs font-semibold text-gray-300 lg:text-sm">supports JPG, PNG and JPEG</p>
       </div>
     </div>
   );

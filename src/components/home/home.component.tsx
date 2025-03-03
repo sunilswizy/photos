@@ -67,14 +67,14 @@ const HomeComponent = () => {
 
   return (
     <div className="flex w-full flex-col items-center justify-center pt-20">
-      <div className="flex h-30 w-50 flex-col gap-2 sm:h-50 sm:w-95 lg:h-70 lg:w-140">
+      <div className="flex h-45 w-65 flex-col gap-2 sm:h-50 sm:w-95 lg:h-70 lg:w-140">
         <div className="h-[80%]">
           <FileUpload onFileChange={onFileChange} />
         </div>
         <div className="h-[20%]">{isFileUploading && <ProgressBar progress={totalProgress} />}</div>
       </div>
 
-      <div className="flex pr-25 pb-10 pl-25">
+      <div className="flex pt-10 pr-25 pb-10 pl-25">
         <ImageGallery files={files} />
       </div>
     </div>
